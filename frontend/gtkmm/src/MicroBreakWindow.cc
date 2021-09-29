@@ -23,6 +23,7 @@
 
 #include "preinclude.h"
 
+#include <stdlib.h>
 #include <gtkmm/label.h>
 #include <gtkmm/box.h>
 #include <gtkmm/image.h>
@@ -234,7 +235,7 @@ MicroBreakWindow::update_label()
     }
 
 
-  Glib::ustring txt(_("Please relax for a few seconds"));
+  Glib::ustring txt(_("Look around, stretch or exercise, check your surroundings\nCheck if timewarrior is accurate"));
   if (show_next == BREAK_ID_REST_BREAK)
     {
       char s[128];
